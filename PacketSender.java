@@ -219,7 +219,7 @@ public class PacketSender {
         String payloadHex = stringToHex(payload);
 
         String clientIp = InetAddress.getLocalHost().getHostAddress();
-        PacketSender packet = new PacketSender("localhost", 5001, encapsulate(payloadHex, clientIp, serverIp));
+        PacketSender packet = new PacketSender("localhost", 5000, encapsulate(payloadHex, clientIp, serverIp));
 
     }
 }
